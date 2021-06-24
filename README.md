@@ -19,7 +19,7 @@
 Para a parte de cadastro, nos diga qual verbo http você vai utilizar
 </h3>
 
-<p align="justify"> :robot: Para o processo de cadastro temos duas opções de verbos HTTP para utilizar sendo elas GET e POST. Quando utilizamos o GET, os parâmetros são passados no cabeçalho da requisição. Por isso, podem ser vistos pela URI, sendo esse verbo o padrão para enviar dados quando submetemos um formulário HTTP, podendo alterar esse comportamento dizendo para o formulário qual do método (method) ele deve usar.  :robot: </p>
+<p align="justify"> :robot: Para o processo de cadastro temos duas opções de verbos HTTP para utilizar sendo elas GET e POST. Quando utilizamos o GET, os parâmetros são passados no cabeçalho da requisição. Por isso, podem ser vistos pela URI, sendo esse verbo o padrão para enviar dados quando submetemos um formulário HTTP, podendo alterar esse comportamento dizendo para o formulário qual do método (method) ele deve usar. :robot: </p>
 
 <p align="justify"> :robot: No caso de formulários web, é muito comum que esse método seja o POST, tendo esse como característica o envio dos parâmetros no corpo da requisição HTTP. Escondendo eles da URI. É pertinente salientar que se utilizarmos o método POST protegemos os dados submetidos pelo formulário. :robot: </p>
 
@@ -36,7 +36,7 @@ Como você vai adicionar essa flexibilidade (form-url-encoded) ou JSON
 </h3>
     
 
-<p align="justify"> :robot: Em uma solicitação POST geralmente é enviada por meio de um formulário HTML e resulta em uma alteração no servidor. Nesse caso, o tipo de conteúdo é selecionado colocando a string adequada no atributo enctype do elemento <form>; application/x-www-form-urlencoded: as chaves e valores são codificados em tuplas de valor-chave separadas por '&', com um '='  entre a chave e o valor. Porem é pertinente salientar que uma API REST, ao disponibilizar um endpoint, "necessita" de um JSON (JavaScript Object Notation) como forma de transporte de informações (JSON é somente uma forma bem leve de representação e troca de informações).  <a href="https://www.treinaweb.com.br/blog/rest-nao-e-simplesmente-retornar-json-indo-alem-com-apis-rest">🔗 HTTP | JSON </a> :robot: </p>
+<p align="justify"> :robot: Em uma solicitação POST geralmente é enviada por meio de um formulário HTML e resulta em uma alteração no servidor. Nesse caso, o tipo de conteúdo é selecionado colocando a string adequada no atributo enctype do elemento; application/x-www-form-urlencoded: as chaves e valores são codificados em tuplas de valor-chave separadas por '&', com um '='  entre a chave e o valor. Porem é pertinente salientar que uma API REST, ao disponibilizar um endpoint, "necessita" de um JSON (JavaScript Object Notation) como forma de transporte de informações (JSON é somente uma forma bem leve de representação e troca de informações).  <a href="https://www.treinaweb.com.br/blog/rest-nao-e-simplesmente-retornar-json-indo-alem-com-apis-rest">🔗 HTTP | JSON </a> :robot: </p>
 
 <p align="justify"> :robot: Desta forma vamos padronizar nossa aplicação Content-Type: application/json, definindo que vamos Solicitar/Responder apenas usando formato JSON.:robot: </p>
 
