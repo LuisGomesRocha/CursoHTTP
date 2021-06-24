@@ -28,7 +28,7 @@ Como vai passar os argumentos no momento da requisição
 </h3>
 
 <h3 align="center">
-Esse endereço pode receber dados via formulário normal(form-url-encoded) ou JSON
+Esse endereço pode receber dados via formulário normal(form-url-encoded) ou JSON.
 </h3>
 
 <h3 align="center">
