@@ -1,0 +1,35 @@
+HTTP: Entendendo a web por baixo dos panos
+
+
+
+Cenário:
+
+Você ficou responsável por definir o melhor uso do protocolo HTTP para possibilitar a criação de uma API que realiza pesquisas de passagens de avião e cadastro de compradores.
+
+
+Para a parte de pesquisa, nos diga qual verbo http você vai utilizar e também como vai passar os argumentos. Além disso, é necessário que você explique o motivo da decisão.
+
+
+Para a parte de cadastro, nos diga qual verbo http você vai utilizar e também como vai passar os argumentos. Outro ponto importante é:  Esse endereço pode receber dados via formulário normal (form-url-encoded) ou JSON. Como você vai adicionar essa flexibilidade? Explique o motivo da decisão.
+
+
+Para fechar, é necessário que sempre que possível a comunicação seja feita com os dados criptografados. O que você sugeriria aqui e porque?
+
+
+
+O que seria bom ver nessa resposta?
+
+
+
+Peso 2: Utilização de content-type para definir o formato
+Peso 2: Utilização de https para criptografar a comunicação
+Peso 3: Utilização de get e parâmetros pela url para a pesquisa
+Peso 3: Utilização de post para o cadastro=
+
+
+Resposta do Especialista:
+
+Objetivo de aprendizado: Criar um endereço que recebe get e os parâmetros de pesquisa
+Motivo da escolha: Escolhi o Get porque estamos fazendo uma busca. A semântica básica do HTTP sugere o uso de tal verbo para este tipo de operação. Além disso, o navegador suporta tranquilamente.
+Criar um endereço que recebe um post para o cadastro. Além disso, esse endereço vai analisar o content-type da requisição para saber como lidar com o formato do dado enviado.
+Necessário criar a estrutura de certificados para habilitar a criptografia via https nas comunicações.  
